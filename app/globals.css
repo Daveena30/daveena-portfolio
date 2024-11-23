@@ -7,6 +7,25 @@
   --foreground: #171717;
 }
 
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #4f46e5, #9333ea, #6b21a8, #8b5cf6);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -18,4 +37,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#hero {
+  padding-top: var(--navbar-height);
 }
