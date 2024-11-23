@@ -1,12 +1,21 @@
 export default function About() {
     return (
-        <section id="about" className="h-screen bg-gray-800 text-white">
-        <h2 className="text-3xl font-bold text-purple-700 mb-6">À propos</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Passionnée par l'informatique et le design, je suis une personne
-          enthousiaste et dynamique qui aime partager mes connaissances avec les autres.
-        </p>
-      </section>
+        <section
+  id="about"
+  className="bg-[#1E152A] text-white py-16 flex flex-col items-center text-center"
+>
+  {/* Titre */}
+  <h2 className="text-4xl font-bold mb-4">About Me</h2>
+
+  {/* Texte descriptif */}
+  <p className="max-w-3xl text-lg leading-relaxed">
+    I am a passionate Frontend Developer dedicated to crafting seamless and
+    user-friendly web experiences. My journey in the tech world revolves
+    around blending creativity and functionality to deliver high-quality
+    projects. Let’s build something amazing together!
+  </p>
+</section>
+
     );
   }
   

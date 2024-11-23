@@ -1,9 +1,10 @@
 import React from "react";
 
+
 const NavBar: React.FC = () => {
   return (
     <nav
-      className="fixed top-0 left-0 w-full bg-[#121212] shadow-md z-50 h-16 flex items-center justify-between px-8"
+      className="fixed top-0 left-0 w-full bg-[#1E152A] shadow-md z-50 h-16 flex items-center justify-between px-8"
     >
       {/* Contenu principal */}
       <div className="flex items-center justify-between w-full">
