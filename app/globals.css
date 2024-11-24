@@ -1,17 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Font */
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
 
+/* Variables globales */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  height: 100%;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+  background: #0a0a0a; /* Assurez-vous que la couleur de fond est correcte */
+  height: 100%; /* Important pour éviter le "tirer" */
+  overscroll-behavior: none;
+}
+
+/* Section Hero */
+#hero {
+  padding-top: var(--navbar-height, 64px); /* Fallback valeur de 64px */
+}
+
+/* Animations */
 @keyframes gradientBackground {
   0% {
     background-position: 0% 50%;
@@ -30,27 +57,21 @@
   animation: gradientBackground 10s ease infinite;
 }
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
- 
-}
-
-#hero {
-  padding-top: var(--navbar-height);
-}
-
+/* Gradient de Texte */
 .text-gradient {
   background: linear-gradient(90deg, #6b46c1, #8b5cf6);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/* Utilities pour scrollbar */
+@layer utilities {
+  .scrollbar-hidden {
+    scrollbar-width: none; /* Pour Firefox */
+    -ms-overflow-style: none; /* Pour Internet Explorer */
+  }
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Pour Chrome, Safari et Edge */
+  }
 }
