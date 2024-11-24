@@ -1,14 +1,13 @@
 import React from "react";
 
-
 const NavBar: React.FC = () => {
   return (
     <nav
       className="fixed top-0 left-0 w-full bg-[#1E152A] shadow-md z-50 h-16 flex items-center justify-between px-8"
     >
-      {/* Contenu principal */}
+      {/* Main Container */}
       <div className="flex items-center justify-between w-full">
-        {/* Logo/Nom à gauche */}
+        {/* Logo/Name on the left */}
         <a
           href="#hero"
           className="text-xl font-bold text-white hover:text-purple-300 transition"
@@ -16,37 +15,41 @@ const NavBar: React.FC = () => {
           Daveena
         </a>
 
-        {/* Liens au centre */}
-        <div className="relative">
-          <div className="bg-gradient-to-r from-purple-800 to-purple-500 rounded-full px-6 py-2 flex items-center shadow-md">
-            <a
-              href="#about"
-              className="text-white mx-4 hover:text-purple-300 transition"
-            >
-              About Me
-            </a>
-            <a
-              href="#skills"
-              className="text-white mx-4 hover:text-purple-300 transition"
-            >
-              Skills
-            </a>
-            <a
-              href="#projects"
-              className="text-white mx-4 hover:text-purple-300 transition"
-            >
-              Projects
-            </a>
-            <a
-              href="#contact"
-              className="text-white mx-4 hover:text-purple-300 transition"
-            >
-              Contact
-            </a>
-          </div>
+        {/* Centered Links */}
+        <div className="hidden md:flex bg-gradient-to-r from-purple-800 to-purple-500 rounded-full px-6 py-2 items-center shadow-md">
+          <a
+            href="#about"
+            className="text-white mx-4 hover:text-purple-300 transition"
+          >
+            About Me
+          </a>
+          <a
+            href="#skills"
+            className="text-white mx-4 hover:text-purple-300 transition"
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="text-white mx-4 hover:text-purple-300 transition"
+          >
+            Projects
+          </a>
+          <a
+            href="#education"
+            className="text-white mx-4 hover:text-purple-300 transition"
+          >
+            Education
+          </a>
+          <a
+            href="#contact"
+            className="text-white mx-4 hover:text-purple-300 transition"
+          >
+            Contact
+          </a>
         </div>
 
-        {/* Icônes sociales à droite */}
+        {/* Social Icons */}
         <div className="flex space-x-4">
           <a
             href="https://github.com"

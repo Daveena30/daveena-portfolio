@@ -4,7 +4,7 @@ const Skills = () => {
     return (
         <section
             id="skills"
-            className="bg-gradient-to-r from-purple-700 via-purple-500 to-purple-900 py-16 flex flex-col items-center justify-center"
+            className="bg-[#1E152A] py-16 flex flex-col items-center justify-center"
         >
             {/* Section Title */}
             <div className="mb-8 text-center">
