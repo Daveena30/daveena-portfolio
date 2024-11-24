@@ -68,12 +68,15 @@ export default function Projects() {
               </p>
               {/* Centered Pill-Shaped Button */}
               <div className="flex justify-center">
-                <a
-                  href={project.github}
-                  className="px-4 py-1.5 bg-purple-500 text-white text-xs font-medium rounded-full hover:bg-purple-600 transition"
-                >
-                  View on GitHub
-                </a>
+              <a
+  href={project.github}
+  target="_blank" // Opens in a new tab
+  rel="noopener noreferrer" // Ensures security and performance
+  className="block mt-4 px-6 py-2 bg-purple-500 text-white text-sm font-medium rounded-full hover:bg-purple-600 transition text-center"
+>
+  View on GitHub
+</a>
+
               </div>
             </div>
           </div>
