@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <footer
       id="contact"
-      className="bg-gradient-to-br from-[#1E152A] via-[#2B1A40] to-[#6A1B9A] py-16 text-white"
+      className="bg[#000] py-16 text-white flex flex-col justify-center items-center min-h-[50vh]"
     >
       <div className="max-w-4xl mx-auto text-center">
         {/* Title */}

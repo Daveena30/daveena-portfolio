@@ -33,7 +33,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-[#1E152A] text-white py-16 px-6">
+    <section id="projects" className="bg-gradient-to-br from-[#1E152A] via-[#2B1A40] to-[#6A1B9A] text-white py-16 px-6">
       <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
       <div className="flex justify-between items-center flex-wrap gap-6">
         {projects.map((project, index) => (
@@ -50,8 +50,8 @@ export default function Projects() {
               <Image
                 src={project.image}
                 alt={`${project.title} image`}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
                 className="absolute inset-0 w-full h-full"
               />
             </div>

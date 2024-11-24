@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="bg-[#1E152A] py-16 text-white"
+      className="bg-gradient-to-br from-[#1E152A] via-[#2B1A40] to-[#6A1B9A] py-16 text-white"
     >
       {/* Section Title */}
       <div className="text-center mb-12">

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,15 +26,11 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100%; /* Assurez-vous que le contenu peut dépasser */
+  height: auto; /* Autorise la hauteur dynamique basée sur le contenu */
   overflow-x: hidden; /* Empêche le défilement horizontal */
-  background: #0a0a0a; /* Assurez-vous que la couleur de fond est correcte */
-  height: 100%; /* Important pour éviter le "tirer" */
-  overscroll-behavior: none;
-}
-
-/* Section Hero */
-#hero {
-  padding-top: var(--navbar-height, 64px); /* Fallback valeur de 64px */
+  background: #0a0a0a; /* Couleur de fond */
+  overscroll-behavior: auto;
 }
 
 /* Animations */
@@ -57,7 +52,6 @@ body {
   animation: gradientBackground 10s ease infinite;
 }
 
-/* Gradient de Texte */
 .text-gradient {
   background: linear-gradient(90deg, #6b46c1, #8b5cf6);
   background-clip: text;
@@ -65,13 +59,18 @@ body {
   color: transparent;
 }
 
-/* Utilities pour scrollbar */
 @layer utilities {
   .scrollbar-hidden {
-    scrollbar-width: none; /* Pour Firefox */
-    -ms-overflow-style: none; /* Pour Internet Explorer */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
-  .scrollbar-hidden::-webkit-scrollbar {
-    display: none; /* Pour Chrome, Safari et Edge */
-  }
+  
 }
+
+#__next {
+  display: flex;
+  flex-direction: column; /* Dispose les sections verticalement */
+  min-height: 100vh; /* S'assure que le conteneur occupe au moins toute la fenêtre */
+}
+
+
