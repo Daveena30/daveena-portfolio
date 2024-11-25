@@ -22,10 +22,7 @@
   }
 }
 
-/* HTML */
-html {
-  scroll-behavior: smooth;
-}
+
 /* Body */
 body {
   margin: 0;
