@@ -26,7 +26,7 @@ const projects = [
     title: "724events",
     description: "Debugging and finalizing a one-page event management agency website",
     skills: ["JavaScript", "Chrome DevTools", "SCSS"],
-    github: "https://github.com/Daveena30/724-Events/tree/main/src/containers",
+    github: "https://github.com/Daveena30/724-Events",
     image: "/724.webp",
   },
 ];

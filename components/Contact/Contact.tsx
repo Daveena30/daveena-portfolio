@@ -11,7 +11,7 @@ export default function Contact() {
         {/* Contact Links */}
         <div className="flex justify-center gap-8 mb-8">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/daveena-seeneevassen/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-2 bg-purple-500 text-white text-sm font-medium rounded-full hover:bg-purple-600 transition"
@@ -27,7 +27,7 @@ export default function Contact() {
             LinkedIn
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Daveena30"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-2 bg-purple-500 text-white text-sm font-medium rounded-full hover:bg-purple-600 transition"
