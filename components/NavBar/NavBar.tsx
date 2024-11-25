@@ -12,21 +12,21 @@ const NavBar: React.FC = () => {
         Daveena
       </a>
 
-      {/* Desktop Links */}
-      <div className="hidden md:flex space-x-6">
-        <a href="#about" className="text-white hover:text-purple-300 transition">
+      {/* Centered Links (Desktop Only) */}
+      <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-purple-900 bg-opacity-50 backdrop-blur-lg rounded-full px-6 py-2 shadow-md">
+        <a href="#about" className="text-white mx-4 hover:text-purple-300 transition">
           About Me
         </a>
-        <a href="#skills" className="text-white hover:text-purple-300 transition">
+        <a href="#skills" className="text-white mx-4 hover:text-purple-300 transition">
           Skills
         </a>
-        <a href="#projects" className="text-white hover:text-purple-300 transition">
+        <a href="#projects" className="text-white mx-4 hover:text-purple-300 transition">
           Projects
         </a>
-        <a href="#education" className="text-white hover:text-purple-300 transition">
+        <a href="#education" className="text-white mx-4 hover:text-purple-300 transition">
           Education
         </a>
-        <a href="#contact" className="text-white hover:text-purple-300 transition">
+        <a href="#contact" className="text-white mx-4 hover:text-purple-300 transition">
           Contact
         </a>
       </div>
