@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative h-screen bg-[#1E152A]mt-16 flex flex-col lg:flex-row items-center justify-center px-6 sm:px-16"
+      className="relative h-screen bg-[#1E152A] flex flex-col lg:flex-row items-center justify-center px-6 sm:px-16 max-lg:pt-40 max-md:pt-12 max-sm:pt-10"
     >
       {/* Canvas for Stars */}
       <canvas
@@ -77,9 +77,9 @@ const Hero: React.FC = () => {
       <div className="max-w-xl space-y-6 text-center lg:text-left lg:mr-12">
         <div className="inline-flex items-center px-6 py-3 bg-purple-900/50 text-white rounded-full shadow-lg">
           <SparklesIcon className="h-5 w-5 text-purple-300 mr-3" />
-          <span className="font-semibold text-lg">
-            Daveena Seeneevassen - Frontend Developer
-          </span>
+          <p className="font-semibold text-lg leading-none">
+            Daveena Seeneevassen <span className="max-sm:hidden">- </span><span className="sm:hidden"><br /></span>Frontend Developer
+          </p>
         </div>
 
         <h1 className="text-5xl sm:text-6xl font-bold text-white leading-tight fade-in">

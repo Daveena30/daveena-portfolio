@@ -13,8 +13,8 @@ const NavBar: React.FC = () => {
       </a>
 
       {/* Centered Links (Desktop Only) */}
-      <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-purple-900 bg-opacity-50 backdrop-blur-lg rounded-full px-6 py-2 shadow-md">
-        <a href="#about" className="text-white mx-4 hover:text-purple-300 transition">
+      <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-purple-900 bg-opacity-50 backdrop-blur-lg rounded-full px-6 py-2 shadow-md" >
+        <a href="#about" className="text-white mx-4 hover:text-purple-300 transition whitespace-nowrap">
           About Me
         </a>
         <a href="#skills" className="text-white mx-4 hover:text-purple-300 transition">
