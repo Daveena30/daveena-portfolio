@@ -27,7 +27,7 @@ const Education = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-2xl font-semibold text-[#C49EFC] mb-4">
+      <h3 className="text-2xl font-semibold text-white mb-4">
         Intégrateur Web
       </h3>
 
@@ -40,19 +40,19 @@ const Education = () => {
 
       {/* Skills */}
       <div className="flex flex-wrap justify-center gap-3">
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-sm text-[#C49EFC] shadow-md">
+        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
           HTML
         </span>
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-sm text-[#C49EFC] shadow-md">
+        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
           CSS
         </span>
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-sm text-[#C49EFC] shadow-md">
+        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
           SASS
         </span>
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-sm text-[#C49EFC] shadow-md">
+        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
         JavaScript
         </span>
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-sm text-[#C49EFC] shadow-md">
+        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
         React
         </span>
       </div>

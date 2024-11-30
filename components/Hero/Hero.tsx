@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
 
       {/* Contenu du texte */}
       <div className="max-w-xl space-y-6 text-center lg:text-left lg:mr-12">
-        <div className="inline-flex items-center px-6 py-3 bg-purple-900/50 text-white rounded-full shadow-lg">
+        <div className="inline-flex items-center px-6 py-3 bg-purple-900/50 text-white rounded-full border border-indigo-500/50 shadow-[0_0_15px_5px_rgba(99,102,241,0.5)] hover:shadow-[0_0_20px_8px_rgba(99,102,241,0.6)] transition-shadow">
           <SparklesIcon className="h-5 w-5 text-purple-300 mr-3" />
           <p className="font-semibold text-lg leading-none">
             Daveena Seeneevassen <span className="max-sm:hidden">- </span><span className="sm:hidden"><br /></span>Frontend Developer
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
 
         <a
           href="#projects"
-          className="mt-4 inline-block px-8 py-3 bg-purple-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-purple-700 transition"
+          className="mt-4 inline-block px-10 py-3 text-[#C49EFC] bg-[#6A1B9A] text-white text-lg font-semibold rounded-lg shadow-md hover:bg-purple-700 transition"
         >
           See My Work
         </a>
