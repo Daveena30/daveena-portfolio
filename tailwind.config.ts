@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontfamily: {
+        'cursive': ['Fleur De Leah', 'cursive'],
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: 0, transform: 'translateY(10px)' },

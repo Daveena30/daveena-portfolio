@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Font */
 .cursive {
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Fleur De Leah";
+  font-weight: 900;
+  font-style: bold;
 }
 
 /* Variables globales */
@@ -27,10 +30,14 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100%; /* Assurez-vous que le contenu peut dépasser */
-  height: auto; /* Autorise la hauteur dynamique basée sur le contenu */
-  overflow-x: hidden; /* Empêche le défilement horizontal */
-  background: #0a0a0a; /* Couleur de fond */
+  min-height: 100%;
+  /* Assurez-vous que le contenu peut dépasser */
+  height: auto;
+  /* Autorise la hauteur dynamique basée sur le contenu */
+  overflow-x: hidden;
+  /* Empêche le défilement horizontal */
+  background: #0a0a0a;
+  /* Couleur de fond */
   overscroll-behavior: auto;
 }
 
@@ -39,9 +46,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -65,13 +74,13 @@ body {
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-  
+
 }
 
 #__next {
   display: flex;
-  flex-direction: column; /* Dispose les sections verticalement */
-  min-height: 100vh; /* S'assure que le conteneur occupe au moins toute la fenêtre */
+  flex-direction: column;
+  /* Dispose les sections verticalement */
+  min-height: 100vh;
+  /* S'assure que le conteneur occupe au moins toute la fenêtre */
 }
-
-
