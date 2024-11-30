@@ -12,16 +12,9 @@ const Hero: React.FC = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    const particles: {
-      x: number;
-      y: number;
-      radius: number;
-      speedX: number;
-      speedY: number;
-      opacity: number;
-      opacitySpeed: number;
-    }[] = [];
-    const numParticles = 100; // Nombre de particules
+    const particles: { x: number; y: number; radius: number; speedX: number; speedY: number }[] =
+      [];
+    const numParticles = 100;
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
@@ -31,14 +24,12 @@ const Hero: React.FC = () => {
     const createParticles = () => {
       particles.length = 0; // Clear existing particles
       for (let i = 0; i < numParticles; i++) {
-        const radius = Math.random() * 3 + 1.5; // Taille entre 1.5 et 4.5
+        const radius = Math.random() * 2 + 1;
         const x = Math.random() * canvas.width;
         const y = Math.random() * canvas.height;
-        const speedX = (Math.random() - 0.5) * 0.3; // Mouvement plus lent
-        const speedY = (Math.random() - 0.5) * 0.3;
-        const opacity = Math.random(); // Random initial opacity
-        const opacitySpeed = Math.random() * 0.02 + 0.01; // Vitesse de scintillement
-        particles.push({ x, y, radius, speedX, speedY, opacity, opacitySpeed });
+        const speedX = (Math.random() - 0.5) * 0.5;
+        const speedY = (Math.random() - 0.5) * 0.5;
+        particles.push({ x, y, radius, speedX, speedY });
       }
     };
 
@@ -46,24 +37,17 @@ const Hero: React.FC = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach((particle) => {
-        // Mise à jour de la position
         particle.x += particle.speedX;
         particle.y += particle.speedY;
 
-        // Mise à jour de l'opacité pour l'effet de scintillement
-        particle.opacity += particle.opacitySpeed;
-        if (particle.opacity > 1 || particle.opacity < 0) {
-          particle.opacitySpeed *= -1; // Inverser la direction de l'opacité
-        }
-
-        // Repositionner les particules si elles quittent l'écran
+        // Reposition particles if they go off screen
         if (particle.x < 0 || particle.x > canvas.width) particle.x = Math.random() * canvas.width;
         if (particle.y < 0 || particle.y > canvas.height) particle.y = Math.random() * canvas.height;
 
-        // Dessiner la particule
+        // Draw particle
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`;
+        ctx.fillStyle = "white";
         ctx.fill();
       });
 
@@ -81,12 +65,12 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative h-screen bg-gradient-radial from-[#1E152A] via-[#2B1A40] to-[#6A1B9A] flex flex-col lg:flex-row items-center justify-center px-6 sm:px-16 max-lg:pt-40 max-md:pt-12 max-sm:pt-10"
+      className="relative h-screen bg-[#1E152A] flex flex-col lg:flex-row items-center justify-center px-6 sm:px-16 max-lg:pt-40 max-md:pt-12 max-sm:pt-10"
     >
       {/* Canvas for Stars */}
       <canvas
         ref={canvasRef}
-        className="absolute top-0 left-0 w-full h-full z-[10]"
+        className="absolute top-0 left-0 w-full h-full z-[0] pointer-events-none"
       ></canvas>
 
       {/* Contenu du texte */}

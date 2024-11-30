@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
       {/* Logo/Name on the left */}
       <a
         href="#hero"
-        className="text-4xl font-bold text-white hover:text-purple-300 transition cursive"
+        className="text-4xl font-bold text-white hover:text-indigo-400 transition cursive"
       >
         Daveena
       </a>
@@ -19,31 +19,31 @@ const NavBar: React.FC = () => {
       <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-purple-900 bg-opacity-60 backdrop-blur-lg rounded-full px-6 py-2 shadow-lg border border-purple-500 hover:shadow-xl transition-shadow">
         <a
           href="#about"
-          className="text-white mx-4 hover:text-purple-300 transition whitespace-nowrap"
+          className="text-white mx-4 font-semibold hover:text-indigo-400 transition whitespace-nowrap"
         >
           About Me
         </a>
         <a
           href="#skills"
-          className="text-white mx-4 hover:text-purple-300 transition"
+          className="text-white mx-4 font-semibold hover:text-indigo-400 transition"
         >
           Skills
         </a>
         <a
           href="#projects"
-          className="text-white mx-4 hover:text-purple-300 transition"
+          className="text-white mx-4 font-semibold hover:text-indigo-400 transition"
         >
           Projects
         </a>
         <a
           href="#education"
-          className="text-white mx-4 hover:text-purple-300 transition"
+          className="text-white mx-4 font-semibold hover:text-indigo-400 transition"
         >
           Education
         </a>
         <a
           href="#contact"
-          className="text-white mx-4 hover:text-purple-300 transition"
+          className="text-white mx-4 font-semibold hover:text-indigo-400 transition"
         >
           Contact
         </a>
@@ -56,7 +56,7 @@ const NavBar: React.FC = () => {
           href="https://github.com/Daveena30"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:text-purple-300 transition"
+          className="text-white hover:text-indigo-400 transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const NavBar: React.FC = () => {
           href="https://www.linkedin.com/in/daveena-seeneevassen/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:text-purple-300 transition"
+          className="text-white hover:text-indigo-400 transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -131,35 +131,35 @@ const NavBar: React.FC = () => {
         <div className="absolute top-16 right-0 bg-[#1E152A] w-48 shadow-md rounded-lg flex flex-col py-4 space-y-2 text-center z-50">
           <a
             href="#about"
-            className="text-white py-2 hover:text-purple-300 transition"
+            className="text-white py-2 hover:text-indigo-400 transition"
             onClick={() => setMenuOpen(false)}
           >
             About Me
           </a>
           <a
             href="#skills"
-            className="text-white py-2 hover:text-purple-300 transition"
+            className="text-white py-2 hover:text-indigo-400 transition"
             onClick={() => setMenuOpen(false)}
           >
             Skills
           </a>
           <a
             href="#projects"
-            className="text-white py-2 hover:text-purple-300 transition"
+            className="text-white py-2 hover:text-indigo-400 transition"
             onClick={() => setMenuOpen(false)}
           >
             Projects
           </a>
           <a
             href="#education"
-            className="text-white py-2 hover:text-purple-300 transition"
+            className="text-white py-2 hover:text-indigo-400 transition"
             onClick={() => setMenuOpen(false)}
           >
             Education
           </a>
           <a
             href="#contact"
-            className="text-white py-2 hover:text-purple-300 transition"
+            className="text-white py-2 hover:text-indigo-400 transition"
             onClick={() => setMenuOpen(false)}
           >
             Contact
