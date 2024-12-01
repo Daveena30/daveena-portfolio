@@ -1,12 +1,13 @@
 import { ComponentPropsWithoutRef } from "react";
 
-export const LinkedinIcon = (
-  props: ComponentPropsWithoutRef<"svg"> & { size?: number }
-) => {
+const LinkedinIcon = ({
+  size = 24, // Taille par défaut si non spécifiée
+  ...props
+}: ComponentPropsWithoutRef<"svg"> & { size?: number }) => {
   return (
     <svg
-      width={props.size}
-      height={props.size}
+      width={size}
+      height={size}
       viewBox="0 0 256 256"
       version="1.1"
       preserveAspectRatio="xMidYMid"
@@ -21,3 +22,5 @@ export const LinkedinIcon = (
     </svg>
   );
 };
+
+export default LinkedinIcon;

@@ -40,19 +40,19 @@ const Education = () => {
 
       {/* Skills */}
       <div className="flex flex-wrap justify-center gap-3">
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
+        <span className="px-4 py-2 bg-purple-500 rounded-full text-semibold text-foreground/70 shadow-md">
           HTML
         </span>
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
+        <span className="px-4 py-2 bg-purple-500 rounded-full text-semibold text-foreground/70 shadow-md">
           CSS
         </span>
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
+        <span className="px-4 py-2 bg-purple-500  rounded-full text-semibold text-foreground/70 shadow-md">
           SASS
         </span>
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
+        <span className="px-4 py-2 bg-purple-500 rounded-full text-semibold text-foreground/70 shadow-md">
         JavaScript
         </span>
-        <span className="px-4 py-2 bg-[#C49EFC]/20 rounded-full text-semibold text-indigo-400 shadow-md">
+        <span className="px-4 py-2 bg-purple-500 rounded-full text-semibold text-foreground/70 shadow-md">
         React
         </span>
       </div>
